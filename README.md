@@ -25,15 +25,6 @@ Special Instruction for Database connection
 *******************************************
 Please replace 'USGCYL508' with your localhost name for connectionString in web.config(in ContactManager) and App.config(in DataEntity) file
 
-Web.config
-  <connectionStrings>
-    <add name="ContactContext" connectionString="Data Source=(yourlocalhost);Initial Catalog=ContactDB;Integrated Security=SSPI;" providerName="System.Data.SqlClient" />
-    <add name="ContactDBEntities" connectionString="metadata=res://*/DataModel.csdl|res://*/DataModel.ssdl|res://*/DataModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=(yourlocalhost);initial catalog=ContactDB;integrated security=True;multipleactiveresultsets=True;application name=EntityFramework&quot;" providerName="System.Data.EntityClient" />
-  </connectionStrings>
-  
-App.config
-<connectionStrings>
-  <add name="ContactDBEntities" connectionString="metadata=res://*/DataModel.csdl|res://*/DataModel.ssdl|res://*/DataModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=(yourlocalhost);initial catalog=ContactDB;integrated security=True;multipleactiveresultsets=True;application name=EntityFramework&quot;" providerName="System.Data.EntityClient" /></connectionStrings>
   
 *****************************************************************************************
 Db Script - Please run this db script on sql after you run web application at first time 
