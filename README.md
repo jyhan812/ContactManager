@@ -3,15 +3,19 @@
 Synopsis
 Build a very simple contact management MVC application using C#.
 This is Entity Framework 6 Code First using MVC 5 web application.
+
 Applications
 -	Visual Studio 2017 (C# .Net 4.5)
 -	SQL Server 2012
+
 Setup
 After running the project, it will create 1 database and 2 tables.
+
 DB: ContactDB
 Tables: ContactDB and ContactViewAudit
  
 Then run DBscript in DbScript.txt  on master DB, it will create 2 triggers and 1 stored procedure.
+
 Trigger:  AuditDeleteTrigger and AuditUpdateTrigger
 Stored Procedure: Audit_Retrieve 
  
