@@ -20,6 +20,20 @@ Trigger:  AuditDeleteTrigger and AuditUpdateTrigger
 Stored Procedure: Audit_Retrieve 
  
 UI elements: list, search, create, edit and delete
+
+
+*******************************************************************************
+Hangfire: Please run this script before run project to create a Hangfire table 
+*******************************************************************************
+
+USE master;  
+GO 
+
+CREATE DATABASE [Hangfire]  
+GO 
+
+
+
 *******************************************
 Special Instruction for Database connection
 *******************************************
