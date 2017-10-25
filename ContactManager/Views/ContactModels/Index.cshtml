@@ -21,6 +21,7 @@
                             <th>City</th>
                             <th>State</th>
                             <th>PostalCode</th>
+                            <th>Display Name</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -36,6 +37,7 @@
                                 <td>@contact.City</td>
                                 <td>@contact.State</td>
                                 <td>@contact.PostalCode</td>
+                                <td>@contact.DisplayName</td>
                                 <td>
                                     @Html.ActionLink("Edit", "Edit", new { id = contact.ContactID }) |
                                     @Html.ActionLink("Details", "Details", new { id = contact.ContactID }) |

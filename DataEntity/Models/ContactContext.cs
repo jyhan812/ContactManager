@@ -1,6 +1,7 @@
 ﻿using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.ComponentModel.DataAnnotations.Schema;
+using System;
 
 namespace DataEntity.Models
 {
@@ -13,6 +14,12 @@ namespace DataEntity.Models
         }
 
         public DbSet<ContactModel> Contact { get; set; }
+
+        public static explicit operator ContactContext(DbSet<ContactView> v)
+        {
+            throw new NotImplementedException();
+        }
+
         public DbSet<ContactViewAudit> ContactAudit { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

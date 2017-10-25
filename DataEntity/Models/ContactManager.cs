@@ -36,7 +36,6 @@ namespace DataEntity.Models
                 {
                     try
                     {
-
                         ContactView CT = db.ContactViews.Find(contact.ContactID);
                         CT.FirstName = contact.FirstName;
                         CT.LastName = contact.LastName;
@@ -46,6 +45,7 @@ namespace DataEntity.Models
                         CT.City = contact.City;
                         CT.State = contact.State;
                         CT.PostalCode = contact.PostalCode;
+                        CT.DisplayName = contact.DisplayName;
 
                         db.SaveChanges();
 
